@@ -14,8 +14,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-southeast-2
       - name: Code deploy to S3
-        run: |
-          aws s3 sync , s3://jira-gitcopilot-sdlc-demo/ \
-          --exclude "*" \
-          --include "index.html"
+        run: aws s3 sync . s3://jira-gitcopilot-sdlc-demo/ --exclude "*" --include "index.html"
             
