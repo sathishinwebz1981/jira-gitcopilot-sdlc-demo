@@ -1,0 +1,8 @@
+name: manual trigger demo
+on: workflow_dispatch
+jobs:
+  manaultrigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first step
+        run:  echo "manual trigger manual"
