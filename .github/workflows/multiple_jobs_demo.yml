@@ -1,0 +1,19 @@
+name: Multiple Jobs Demo
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Build steps
+        run: echo " Demo build"
+  test:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Test steps
+        run: echo " Running Test Cases"
+  deploy:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Deploy app
+        run: echo " Deploy App"
+      
